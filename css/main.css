@@ -1,6 +1,6 @@
 body {
 	font-family: 'Montserrat', sans-serf;
-	background-color: yellow;
+	background-color: #FAF2AD;
 
 	
 }
@@ -9,15 +9,20 @@ body {
  h1  {
 	font-size: 1.75rem;
 	text-align: center;
+	color: grey;
 }
 
 section {
-	background-color: lightgrey;
+	background-color: #D0AD87;
 	width: 75%;
 	margin: 1em  auto 0 auto;
 	padding: 1em;
 }
 
+
+/******************
+	ADD ITEM FORM
+*******************/
 form {
 	width: 100%;
 	margin: 2em auto auto;
@@ -27,14 +32,14 @@ form {
 input[type="text"] {
 	height: 20px;
 	width: 20%;
-	font-size: 10px;
+	font-size: 0.625px;
 	padding: 1px;
 	margin: 0 auto;
 }
 
 select {
 	width: 50%;
-	font-size: 10px;
+	font-size: 0.635em;
 
 }
 
@@ -47,9 +52,9 @@ label {
 }
 
 button {
-	height: 20px;
+	height: 1.250em;
 	padding: 1px;
-	font-size: 10px;
+	font-size: 0.625em;
 }
 
 @media (max-width: 500px){
@@ -78,5 +83,59 @@ button {
 		width: 25%;
 	}
 
-	
 }
+
+/******************
+	LIST
+*******************/
+
+
+#list h1 {
+	margin-bottom: 1em;
+}
+
+#list p {
+	font-size: 0.75em;
+	padding-top: 0.35em;
+}
+
+
+
+#list label {
+	font-size: 0.85rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+
+}
+#list legend {
+	width: 65%;
+	margin: 0 auto;
+	font-size: 0.75em;
+	border-color: black;
+}
+#list > div {
+	border-width: 1px;
+	border-style: none none solid none;
+	border-color: black;
+	margin: 0 auto 1.2em auto;
+	width: 65%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+}
+
+#list button {
+	font-size: 0.5em;
+}
+
+.no-items {
+	display: none;
+
+}
+
+.container-fluid input:checked ~ div {
+	color: green;
+}
+
+
+
+
