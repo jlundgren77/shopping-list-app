@@ -4,16 +4,61 @@
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
 	<link rel="stylesheet" href="css/reset.css">
+	
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-	<div id="wrapper">
-		<header>
+    <div class="container-fluid">
+		<section class="text-center add-items">
 			<h1>My Shopping List</h1>
-			<form>
+
+
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="item-add">Add Your Item</label>
+					<input type="text" id="item-add" name="item-add" class="form-control" placeholder="item">
+				</div>
+				
+				<div class="form-group">
+					<div class="row">
+						<label for="item-group">Item Type</label>
+					</div>
+					<select id="item-group" name="item-group">
+						<option value="Bakery">Bakery</option>
+						<option value="Cleaning">Cleaning</option>
+						<option value="Dairy">Dairy</option>
+						<option value="Frozen">Frozen</option>
+						<option value="Grocery">Grocery</option>
+						<option value="Meat">Meat</option>
+						<option value="Pet">Pet</option>
+						<option value="Produce">Produce</option>
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<label for="comment">Comment</label>
+					<input type="text" id="comment" name="comment" class="form-control" placeholder="optional comment">
+				</div>
+
+				<div class="form-group">
+					<button id="add-item" name="add-item">Add Item</button>
+					<button id="done" name="done">Done</button>
+				</div>
+
 			</form>
-		</header>
+			
+		</section>
+
+		<section id="list">
+			<h1>My Items</h1>
+		</section>
 	</div>
+	
 
 
 </body>
