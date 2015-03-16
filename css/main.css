@@ -34,7 +34,7 @@ form {
 input[type="text"] {
 	height: 20px;
 	width: 20%;
-	font-size: 0.625px;
+	font-size: 0.625em;
 	padding: 1px;
 	margin: 0 auto;
 }
