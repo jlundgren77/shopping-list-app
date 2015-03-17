@@ -13,8 +13,17 @@ body {
 	color: #3B5E4A;
 }
 
+header {
+	background-color: #EFE2B5;
+	margin-top: 0;
+}
+
+section .add-items {
+	margin-top: -1em;
+}
+
 section {
-	background-color: #D0AD87;
+	background-color: ##DCDCDC;
 	width: 75%;
 	margin: 1em  auto 0 auto;
 	padding: 1em;
