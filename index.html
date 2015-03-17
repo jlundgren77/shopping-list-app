@@ -21,7 +21,7 @@
 		<h1>My Shopping List</h1>
 	</header> -->
     <div class="container-fluid">
-		<section class="text-center add-items show">
+		<section class="text-center add-items">
 			<h1>My Shopping List</h1>
 			<form class="form-horizontal" id="item-form">
 				<div class="form-group">
@@ -62,198 +62,50 @@
 		<section id="list">
 			<h1>My Items</h1>
 			
-				<legend>Bakery</legend>
-				<div class="bakery container-fluid">
-					<div class="row">
-						
-						<div class="col-sm-4 item">
-							<p>bread</p>
-						</div>
-						<div class="col-sm-4 comment">
-							<p>one loaf</p>
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item">
-						</div>
-						
-
-					</div>
-					
-				</div>
-				<legend class="no-items">Cleaning</legend>
-				<div class="cleaning container-fluid no-items">
-					<div class="row">
-						
-						<div class="col-sm-4">
-							
-						</div>
-						<div class="col-sm-4">
-							
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item">
-						</div>
-						
-
-					</div>
-
-				</div>
-
-				<legend>Dairy</legend>
-				<div class="dairy container-fluid">
-					<div class="row check-item">
-						
-						<div class="col-sm-4">
-							<p>cheese</p>
-						</div>
-						<div class="col-sm-4">
-							<p>cheddar</p>
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item" >
-						</div>
-						
-					</div>	
-					<div class="row">
-						
-						<div class="col-sm-4">
-							<p>milk</p>
-						</div>
-						<div class="col-sm-4">
-							<p>2% gallon</p>
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item" >
-						</div>
-						
-					</div>	
-
-				</div>
 				
-				<legend>Frozen</legend>
-				<div class="frozen container-fluid">
-					<div class="row">
-						
-						<div class="col-sm-4 item">
-							<p>frozen peas</p>
-						</div>
-						<div class="col-sm-4">
-							
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item">
-						</div>
-						
-					</div>	
+				<div class="bakery container-fluid item-group">
+					<h3>Bakery</h3>
 					
 				</div>
 				
-				<legend>Grocery</legend>
-				<div class="grocery container-fluid">
-					<div class="row">
-						
-						<div class="col-sm-4">
-							<p>canned tomato</p>
-						</div>
-						<div class="col-sm-4">
-							<p>16oz</p>
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item">
-						</div>
-						
-					</div>	
+				<div class="cleaning container-fluid item-group">
+					<h3>Cleaning</h3>
+				</div>
+
+				
+				<div class="dairy container-fluid item-group">
+					<h3>Dairy</h3>
+				</div>
+				
+				
+				<div class="frozen container-fluid item-group">
+					<h3>Frozen</h3>
 					
 				</div>
 				
-				<legend>Meat</legend>
-				<div class="meat container-fluid">
-					<div class="row">
-						
-						<div class="col-sm-4">
-							<p>pork chops</p>
-						</div>
-						<div class="col-sm-4">
-							
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item">
-						</div>
-						
-					</div>
-					<div class="row">
-						
-						<div class="col-sm-4">
-							<p>ground beef</p>
-						</div>
-						<div class="col-sm-4">
-							<p>2 lbs</p>
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item">
-						</div>
-						
-					</div>
-					<div class="row">
-						
-						<div class="col-sm-4">
-							<p>chicken breasts</p>
-						</div>
-						<div class="col-sm-4">
-							
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item">
-						</div>
-						
-					</div>			
+				
+				<div class="grocery container-fluid item-group">
+					<h3>Grocery</h3>
 					
 				</div>
 				
-				<legend>Pet Goods</legend>
-				<div class="pet container-fluid">
-					<div class="row">
-						
-						<div class="col-sm-4">
-							<p>cat litter</p>
-						</div>
-						<div class="col-sm-4">
-							
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item">
-						</div>
-						
-					</div>	
+				
+				<div class="meat container-fluid item-group">
+					<h3>Meat</h3>
 					
 				</div>
 				
-				<legend>Produce</legend>
-				<div class="produce container-fluid">
-					<div class="row">
-						
-						<div class="col-sm-4">
-							<p>lettuce</p>
-						</div>
-						<div class="col-sm-4">
-							
-						</div>
-						<div class="col-sm-4">
-							<label for="have-item">have</label>
-							<input type="checkbox" id="have-item" name="have-item">
-						</div>
-						
-					</div>	
+				
+				<div class="pet container-fluid item-group">
+					<h3>Pet Goods</h3>
+					
+					
+				</div>
+				
+				
+				<div class="produce container-fluid item-group">
+					<h3>Produce</h3>
+					
 
 				</div>
 			<button class="pull-right" id="add-more">Add More Items</button>	

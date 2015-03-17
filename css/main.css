@@ -110,6 +110,8 @@ button {
 	margin-bottom: 1em;
 }
 
+
+
 #list p {
 	font-size: 0.75em;
 	padding-top: 0.35em;
@@ -130,9 +132,7 @@ button {
 	border-color: black;
 }
 #list > div {
-	border-width: 1px;
-	border-style: none none solid none;
-	border-color: black;
+	
 	margin: 0 auto 1.2em auto;
 	width: 65%;
 	font-family: 'Open Sans', sans-serif;
@@ -146,12 +146,14 @@ button {
 #add-more {
 	display: none;
 }
-.no-items {
+
+.item-group {
 	display: none;
-
 }
-
-.have-item{
+.show {
+	display: block;
+}
+.checked p{
 	text-decoration: line-through;
 }
 
