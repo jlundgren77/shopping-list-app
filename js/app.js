@@ -35,10 +35,10 @@ $(document).ready(function(){
 		$('form')[0].reset();
 	})
 		
-	// if ($('.add-items').hasClass('show')) {
-	// 	$('#add-more').hide();
-	// }
+	
 
+
+	//toggle form
 	$('#done').click(function(event){
 		event.preventDefault();
 		$('.add-items').slideUp();
@@ -54,7 +54,25 @@ $(document).ready(function(){
 
 	})
 
-	var kids = ($('input:checked').parent());
-	var sib = (kids.prevAll());
-	sib.children().css('text-decoration', 'line-through');
+	//cross out items if have checked
+	$('input:checkbox').click(function(){
+		var kids = ($('input:checked').parent());
+		 var sib = (kids.prevAll());
+
+		
+		if($(this).is('checked')) {
+			$(this).removeAttr('checked');
+			//sib.children().css('text-decoration', 'none');
+			sib.children().removeClass('have-item');
+		}
+		else {
+			$(this).attr('checked');
+			//sib.children().css('text-decoration', 'line-through');
+		}   sib.children().addClass('have-item');
+		
+	})
+	
+		
+	
+	
 });

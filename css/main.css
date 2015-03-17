@@ -23,7 +23,7 @@ section .add-items {
 }
 
 section {
-	background-color: ##DCDCDC;
+	background-color: #DCDCDC;
 	width: 75%;
 	margin: 1em  auto 0 auto;
 	padding: 1em;
@@ -151,7 +151,9 @@ button {
 
 }
 
-
+.have-item{
+	text-decoration: line-through;
+}
 
 
 
