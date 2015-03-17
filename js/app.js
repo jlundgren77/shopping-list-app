@@ -23,15 +23,15 @@ $(document).ready(function(){
         $("<input>").attr("type", "checkbox").attr("name", "have-item").attr("id" , "have-item").appendTo(".new-checkbox");
 
         //add new edit button
-        $("<div></div>").addClass("col-sm-3 new-button").appendTo(".new-item");
-        $("<button>edit</button>").appendTo(".new-button");
-		//rest form 
+        //$("<div></div>").addClass("col-sm-3 new-button").appendTo(".new-item");
+        //$("<button>edit</button>").appendTo(".new-button");
+		
         
         //remove new classes
         $('.col-sm-3').removeClass("new-checkbox");
         $('.col-sm-3').removeClass("new-button");
         $('.row').removeClass("new-item");
-
+        //reset form
 		$('form')[0].reset();
 	})
 		
