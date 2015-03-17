@@ -32,8 +32,9 @@ $(document).ready(function(){
 
         $("<input>").attr("type", "checkbox").attr("name", "have-item").attr("id" , "have-item").appendTo(".new-checkbox");
 
+        //show groups if not shown
         if($("." + group).children(".item-container").length != 0 ){
-        	$("." + group).show();
+        	$("." + group).addClass("show");
         }
         //add new edit button
         //$("<div></div>").addClass("col-sm-3 new-button").appendTo(".new-item");
@@ -84,6 +85,17 @@ $(document).ready(function(){
 			
 			}
 		
+	})
+	
+	$('#update-list').click(function(event){
+		event.preventDefault();
+		if ($('.item-container').hasClass('checked')) {
+
+			$('.item-container').remove();
+			if
+		}
+			
+
 	})
 	
 		
