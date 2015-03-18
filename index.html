@@ -20,13 +20,17 @@
 	<!-- <header class="page-header">
 		<h1>My Shopping List</h1>
 	</header> -->
-    <div class="container-fluid">
+	<header class="text-center header">
+		<h1>My Shopping List</h1>
+		<p class="pull-right text-muted">created by Jeff Lundgren @2015</p>
+	</header>
+    <div class="container-fluid content">
 		<section class="text-center add-items">
-			<h1>My Shopping List</h1>
+			
 			<form class="form-horizontal" id="item-form">
 				<div class="form-group">
 					<label for="item-add">Add Your Item</label>
-					<input type="text" id="item-add" name="item-add" class="form-control" placeholder="item">
+					<input type="text" id="item-add" name="item-add" class="form-control" placeholder="item" required>
 				</div>
 				
 				<div class="form-group">
@@ -112,10 +116,9 @@
 			<button class="pull-right" id="update-list">Update List</button>
 		</section>
 
-
 	</div>
-	
-
+    
+    	
 
 </body>
 </html>
