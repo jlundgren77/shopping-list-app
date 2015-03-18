@@ -34,7 +34,7 @@ $(document).ready(function(){
 
         //show groups if not shown
         if($("." + group).children(".item-container").length != 0 ){
-        	$("." + group).addClass("show");
+        	$("." + group).show();
         }
         //add new edit button
         //$("<div></div>").addClass("col-sm-3 new-button").appendTo(".new-item");
@@ -89,11 +89,34 @@ $(document).ready(function(){
 	
 	$('#update-list').click(function(event){
 		event.preventDefault();
-		if ($('.item-container').hasClass('checked')) {
+		
 
-			$('.item-container').remove();
-			if
-		}
+			$('.item-container.checked').remove();
+            if($('.bakery .item-container').length<=0) {
+                $('.bakery').hide();
+            }
+            if($('.cleaning .item-container').length<=0) {
+                $('.cleaning').hide();
+            }
+            if($('.dairy .item-container').length<=0) {
+                $('.dairy').hide();
+            }
+			if($('.frozen .item-container').length<=0) {
+                $('.frozen').hide();
+            }
+            if($('.grocery .item-container').length<=0) {
+                $('.grocery').hide();
+            }
+            if($('.meat .item-container').length<=0) {
+                $('.meat').hide();
+            }
+            if($('.pet .item-container').length<=0) {
+                $('.pet').hide();
+            }
+            if($('.produce .item-container').length<=0) {
+                $('.produce').hide();
+            }
+		
 			
 
 	})

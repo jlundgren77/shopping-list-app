@@ -147,7 +147,15 @@ button {
 	display: none;
 }
 
-.item-group {
+.bakery,
+.cleaning,
+.dairy,
+.frozen,
+.grocery,
+.meat,
+.pet,
+.produce
+ {
 	display: none;
 }
 .show {
