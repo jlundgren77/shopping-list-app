@@ -89,9 +89,11 @@ $(document).ready(function(){
 	
 	$('#update-list').click(function(event){
 		event.preventDefault();
-		
+			
 
 			$('.item-container.checked').remove();
+
+			
             if($('.bakery .item-container').length<=0) {
                 $('.bakery').hide();
             }
